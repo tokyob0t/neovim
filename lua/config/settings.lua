@@ -1,12 +1,12 @@
-local vim = vim
-local api = vim.api
-local cmd = vim.cmd
-local set = cmd.set
-local colorscheme = cmd.colorscheme
 local gui = vim.g
+local cmd = vim.cmd
 local options = vim.opt
 local diagnostic = vim.diagnostic
 local func = vim.fn
+local set = cmd.set
+local api = vim.api
+
+
 
 diagnostic.config({
 	virtual_lines = false,
@@ -14,9 +14,9 @@ diagnostic.config({
 })
 
 gui.loaded_netrw = 1
-
 gui.loaded_netrwPlugin = 1
 
+options.undofile = true
 options.cursorline = true
 options.number = true
 options.termguicolors = true
@@ -54,33 +54,31 @@ options.foldlevel = 99
 options.foldlevelstart = 99
 options.foldenable = true
 
-colorscheme("oxocarbon")
+
+
+
+api.nvim_set_hl(0, "Normal", { bg = "none" })
+api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+
 set("expandtab")
 set("infercase")
 set("ignorecase")
 set("smartcase")
 set("gdefault")
 set("nowrap")
-set("nonumber")
+set("number")
 set("list")
 set("ignorecase")
 set("smartcase")
 set("gdefault")
-set("undofile")
-set("nowritebackup")
-set("noswapfile")
-
-cmd("highlight CursorLineNr guibg=#232323")
-cmd("highlight MDCodeBlock guibg=#111111")
-cmd("set mouse=")
-cmd("set conceallevel=1")
 
 api.nvim_command([[
             autocmd BufEnter * if len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) > 1 | set showtabline=2 | else | set showtabline=0 | endif
 ]])
 
---api.nvim_set_hl(0, "Normal", { bg = nil })
---api.nvim_set_hl(0, "NormalFloat", { bg = nil })
+
+
 
 KindIcons = {
 	Method = "  ",
@@ -132,7 +130,3 @@ for type, icon in pairs(DiagnosticSigns) do
 	--vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 	func.sign_define(hl, { text = icon, texthl = hl, numhl = nil })
 end
-
-vim.filetype.add({
-	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
-})

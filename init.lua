@@ -1,2 +1,3 @@
-require("plugin")
-require("potato")
+require("config.lazy")
+require("config.keymaps")
+require("config.settings")

@@ -1,4 +1,8 @@
-require("noice").setup({
+return {
+  "folke/noice.nvim",
+  event = "VeryLazy",
+  dependencies = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" },
+  opts = {
 	popupmenu = { backend = "cmp" },
 	cmdline = {
 		format = {
@@ -49,4 +53,5 @@ require("noice").setup({
 			opts = { skip = true },
 		},
 	},
-})
+  }
+}
