@@ -6,8 +6,6 @@ local func = vim.fn
 local set = cmd.set
 local api = vim.api
 
-
-
 diagnostic.config({
 	virtual_lines = false,
 	virtual_text = true,
@@ -54,9 +52,6 @@ options.foldlevel = 99
 options.foldlevelstart = 99
 options.foldenable = true
 
-
-
-
 api.nvim_set_hl(0, "Normal", { bg = "none" })
 api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 api.nvim_set_hl(0, "NormalNC", { bg = "none" })
@@ -76,9 +71,6 @@ set("gdefault")
 api.nvim_command([[
             autocmd BufEnter * if len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) > 1 | set showtabline=2 | else | set showtabline=0 | endif
 ]])
-
-
-
 
 KindIcons = {
 	Method = "  ",
