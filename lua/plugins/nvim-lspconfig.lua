@@ -1,6 +1,7 @@
 local servers = {
     'clangd', -- C/C++
     'ruff', -- Python
+    'basedpyright',
     'ts_ls', -- TypeScript/JavaScript
     'cssls', -- CSS/SCSS
     'css_variables',

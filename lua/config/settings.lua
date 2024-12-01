@@ -109,16 +109,17 @@ KindIcons = {
     Null = '  ',
 }
 
-DiagnosticSigns = {
-    Hint = '󰌶',
-    Info = '',
-    Warn = '',
-    Error = '',
-    Other = '',
-}
-
-for type, icon in pairs(DiagnosticSigns) do
-    local hl = 'DiagnosticSign' .. type
-    --vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-    func.sign_define(hl, { text = icon, texthl = hl, numhl = nil })
-end
+vim.diagnostic.config({
+    virtual_text = {
+        prefix = '#',
+    },
+    signs = {
+        text = {
+            [vim.diagnostic.severity.HINT] = '󰌶',
+            [vim.diagnostic.severity.INFO] = '',
+            [vim.diagnostic.severity.WARN] = '',
+            [vim.diagnostic.severity.ERROR] = '',
+            --[vim.diagnostic.severity.OTHER] = '',
+        },
+    },
+})
