@@ -1,5 +1,5 @@
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 
-require("config.lazy")
-require("config.keymaps")
-require("config.settings")
+require('config.lazy')
+require('config.keymaps')
+require('config.settings')

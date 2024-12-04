@@ -12,6 +12,7 @@ local servers = {
     'svelte', -- Svelte
     'perlpls', -- Perl
     'marksman', -- Markdown
+    'vala_ls', -- Vala
 }
 
 return {
