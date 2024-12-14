@@ -6,6 +6,7 @@ local servers = {
     'cssls', -- CSS/SCSS
     'css_variables',
     'cssmodules_ls',
+    'tailwindcss',
     'bashls', -- Bash
     'lua_ls', -- Lua
     'rust_analyzer', -- Rust
