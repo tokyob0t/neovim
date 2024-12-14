@@ -22,6 +22,7 @@ return {
             lua = { 'stylua' },
             python = { 'isort', 'black' },
             javascript = { 'biome', stop_after_first = true },
+            ['*'] = { 'prettier', 'prettierd', stop_after_first = true },
         },
         format_on_save = function(bufnr)
             if vim.b[bufnr].disable_autoformat then
