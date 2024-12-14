@@ -22,13 +22,13 @@ return {
             lua = { 'stylua' },
             python = { 'isort', 'black' },
             javascript = { 'biome', stop_after_first = true },
-            ['*'] = { 'prettier', 'prettierd', stop_after_first = true },
+            ['*'] = { 'prettier' },
         },
-        format_on_save = function(bufnr)
+        format_after_save = function(bufnr)
             if vim.b[bufnr].disable_autoformat then
                 return
             end
-            return { timeout_ms = 500, lsp_format = 'fallback' }
+            return { timeout_ms = 1000, lsp_format = 'fallback' }
         end,
     },
 }
