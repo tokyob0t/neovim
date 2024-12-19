@@ -20,6 +20,7 @@ return {
             c = { 'clang-format' },
             ['c++'] = { 'clang-format' },
             lua = { 'stylua' },
+            fennel = { 'fnlfmt' },
             python = { 'isort', 'black' },
             javascript = { 'biome', stop_after_first = true },
             ['*'] = { 'prettier' },
@@ -30,5 +31,11 @@ return {
             end
             return { timeout_ms = 1000, lsp_format = 'fallback' }
         end,
+        formatters = {
+            fnlfmt = {
+                command = 'fnlfmt',
+                args = { '-' },
+            },
+        },
     },
 }

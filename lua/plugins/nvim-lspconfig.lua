@@ -1,7 +1,7 @@
 local servers = {
     'clangd', -- C/C++
     'ruff', -- Python
-    'basedpyright',
+    -- 'basedpyright',
     'ts_ls', -- TypeScript/JavaScript
     'cssls', -- CSS/SCSS
     'css_variables',
@@ -10,6 +10,7 @@ local servers = {
     'eslint', -- eslint
     'bashls', -- Bash
     'lua_ls', -- Lua
+    'fennel_language_server',
     'rust_analyzer', -- Rust
     'svelte', -- Svelte
     'perlpls', -- Perl
