@@ -1,5 +1,7 @@
 return {
     'andweeb/presence.nvim',
     event = 'VeryLazy',
-    opts = {},
+    opts = {
+        main_image = 'file',
+    },
 }

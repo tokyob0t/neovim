@@ -3,7 +3,8 @@ local servers = {
     'ruff', -- Python
     -- 'basedpyright',
     'ts_ls', -- TypeScript/JavaScript
-    'cssls', -- CSS/SCSS
+    -- 'cssls', -- CSS/SCSS
+    'somesass_ls', -- CSS/SCSS
     'css_variables',
     'cssmodules_ls',
     'tailwindcss',
