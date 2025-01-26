@@ -23,6 +23,7 @@ return {
             fennel = { 'fnlfmt' },
             python = { 'isort', 'black' },
             javascript = { 'biome', stop_after_first = true },
+            nix = { 'nixpkgs-fmt' },
             ['*'] = { 'prettier' },
         },
         format_after_save = function(bufnr)

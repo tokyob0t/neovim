@@ -1,6 +1,7 @@
 local servers = {
     'clangd', -- C/C++
     'ruff', -- Python
+    'pylsp',
     -- 'basedpyright',
     'ts_ls', -- TypeScript/JavaScript
     -- 'cssls', -- CSS/SCSS
@@ -17,6 +18,7 @@ local servers = {
     'perlpls', -- Perl
     'marksman', -- Markdown
     'vala_ls', -- Vala
+    'rnix', -- Nix
 }
 
 return {
