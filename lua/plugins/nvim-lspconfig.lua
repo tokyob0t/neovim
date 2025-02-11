@@ -2,6 +2,7 @@ local servers = {
     'clangd', -- C/C++
     'ruff', -- Python
     'pylsp',
+    'jedi_language_server',
     -- 'basedpyright',
     'ts_ls', -- TypeScript/JavaScript
     -- 'cssls', -- CSS/SCSS
