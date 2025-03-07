@@ -2,9 +2,10 @@ local servers = {
     'clangd', -- C/C++
     'ruff', -- Python
     'pylsp',
-    'jedi_language_server',
     -- 'basedpyright',
-    'ts_ls', -- TypeScript/JavaScript
+    -- TypeScript/JavaScript
+    'ts_ls',
+    'biome',
     -- 'cssls', -- CSS/SCSS
     'somesass_ls', -- CSS/SCSS
     'css_variables',
@@ -20,6 +21,7 @@ local servers = {
     'marksman', -- Markdown
     'vala_ls', -- Vala
     'rnix', -- Nix
+    'lemminx', -- xml
 }
 
 return {

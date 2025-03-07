@@ -9,7 +9,7 @@ return {
         })
     end,
     keys = {
-        { '<leader>}', '<cmd>CommentToggle<cr>' },
-        { mode = 'v', '<leader>}', ":'<,'>CommentToggle<cr>" },
+        { '<leader>\\', '<cmd>CommentToggle<cr>' },
+        { mode = 'v', '<leader>\\', ":'<,'>CommentToggle<cr>" },
     },
 }

@@ -22,8 +22,8 @@ keymap('n', '<leader>q', cmd.q, opt)
 keymap('n', '<leader>i', 'o', opt)
 keymap('n', '<leader>I', 'O', opt)
 
-keymap('n', '<leader><Tab>{', cmd.BufferPrev, opt)
-keymap('n', '<leader><Tab>}', cmd.BufferNext, opt)
+keymap('n', '<leader><Tab>[', cmd.BufferPrev, opt)
+keymap('n', '<leader><Tab>]', cmd.BufferNext, opt)
 keymap('n', '<leader><Tab>d', cmd.BufferClose, opt)
 
 keymap({ 'n', 'v' }, ';', ':', opt)
